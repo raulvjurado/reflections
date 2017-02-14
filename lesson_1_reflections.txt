@@ -1,0 +1,39 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It was helpful to find the typo easily and quick. Without using the diff tool, it would have taken an hour or even more.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    By checking the progress that a file has gone through and most important by being able to recover any information 
+    that could have been lost during a job.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    De forma manual, el trabajo se puede entender y medir de una mejor forma. Podemos indicar cuando el trabajo 
+    ha tenido un cambio significativo e indicar qué hemos hecho mediante una descripcion.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Porque Git esta pensado para trabajar con archivos con codigo, donde muchos archivos van a contener informacion que afecten a otros archivos, ya que estan conectados por nombres de variables, metodos o clases que se usan en varios archivos.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Con git clone url, puedo clonar un repositorio. 
+    Con git log, puedo ver el historial de commits de un archivo( cd asteroids/ )
+    Con git diff, puedo ver las diferencias entre dos commits ( git diff id_commit1 id_commit2 )
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Al hacer cambios en el codigo, podemos cometer un error sin darnos cuenta u olvidar algo, cambiando el archivo. Para devolverlo a su estado original nos ocuparia una larga cantidad de tiempo. Sin embargo usando la version de control de Git, podemos volver a su commit anterior solo usando los controles que nos proporciona git, en este caso, para volver a una version anterior:
+
+    git checkout id_commit
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    For different projects that require coding.
