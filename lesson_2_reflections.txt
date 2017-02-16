@@ -34,9 +34,9 @@ organized? How would branches help?
 	Te ayuda a saber donde tienes que estar cuando se produce un error o hay que mejorar 
 	algo concreto, para organizar el trabajo. Si algo no te sale trabajando en un determinado
 	branch, puedes cambiar y trabajar en otro. Muchas posibilidades.
-	Trabajando en equipo, se debería crear un branch para cada bug, cada fix, o incluso cada persona 	para tener claro donde seguir después de un break.
+	Trabajando en equipo, se debería crear un branch para cada bug, cada fix, o incluso cada persona para tener claro donde seguir después de un break.
 	Una vez el trabajo de un branch ha terminado satisfactoriamente, el manager puede actualizar
-	el master branch con la punta del branch, o si han habido logros en ambos branches, puede 		juntarlos con merge.
+	el master branch con la punta del branch, o si han habido logros en ambos branches, puede juntarlos con merge.
 
 How do the diagrams help you visualize the branch structure?
 
@@ -62,7 +62,7 @@ manually?
 			  humano que conoce los archivos.
 
 	Manual-> pros: Te permite elegir sobre los archivos en los que hay un conflicto,
-			estudiando el código y pudiendo hablar con las personas que han 			modificado el archivo en cuestión.
+			estudiando el código y pudiendo hablar con las personas que han modificado el archivo en cuestión.
 		 cons: Requiere gastar una cantidad de tiempo en realizarse que 
 			pudiera ser agilizado con inteligencia artificial.
 
