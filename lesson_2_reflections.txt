@@ -12,13 +12,58 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	Usando el paso intermedio del staging area, te da la opción de pensar bien
+	antes de realizar un commit, en caso de que quieras hacer algún cambio mas 
+	o te arrepientas de haber añadido un archivo modificado al staging area, 
+	puedes volver atrás sin que aparezca un commit en el git log.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Cuando quieres experimentar, o hacer una version en otro idioma y situaciones parecidas,
+	puede resultar util abrir otro "branch" en tu repositorio.
+	En definitiva cuando haces un cambio significativo a tu programa.
+	Branches te ayudara a mantener tu repositorio mas organizado y mas facil de trabajar de esta manera. 
+	Si no lo usas, tendrias que volver realizando un git checkout a un commit anterior y 
+	puedes no ver claro cuando has empezado a crear algo significativamente diferente.
+	Branches ramifica tu trabajo, pudiendo organizarlo de forma muy clara.
+	Tu master branch tiene que ser tu pieza de trabajo de gran calidad, que siempre funcione y
+	que nunca se rompa. En el resto puedes experimentar, intentar mejorarlo o corregir algo.
+	Puedes tener un branch llamado “Development branch”, donde se esta activamente trabajando.
+	Otra tipica y recomendable seria “Experimental branch”, o “New or unique features”.
+	Te ayuda a saber donde tienes que estar cuando se produce un error o hay que mejorar 
+	algo concreto, para organizar el trabajo. Si algo no te sale trabajando en un determinado
+	branch, puedes cambiar y trabajar en otro. Muchas posibilidades.
+	Trabajando en equipo, se debería crear un branch para cada bug, cada fix, o incluso cada persona 	para tener claro donde seguir después de un break.
+	Una vez el trabajo de un branch ha terminado satisfactoriamente, el manager puede actualizar
+	el master branch con la punta del branch, o si han habido logros en ambos branches, puede 		juntarlos con merge.
+
 How do the diagrams help you visualize the branch structure?
+
+	Te dan una vision grafica de la estructura de tu trabajo, a la que accedes con comandos. Te ayuda a entender como funciona
+	Git y eres mas organizado y efectivo al trabajar en equipo o incluso por tu cuenta.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	El resultado es que al evaluar un branch, y ver que nos es util a la parte master, podemos unirlo para que forme parte 
+	de nuestro master. Git realiza una union de archivos evaluando los cambios y haciendo posible ver a traves del master branch,
+	todos los commits del branch fusionado tambien. Lo represemtamos en un diagrama para ver de forma mas clara como queda la 
+	estructura de nuestro repositorio, y ver que archivos quedan alcanzables y cuales no. El diagrama nos ayuda mucho a trabajar
+	de forma mas organizada, teniendo una ayuda visual de lo que esta pasando en nuestro proyecto mediante los comandos que utilizamos.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	Automatic-> pros: Se agilizaria el trabajo si pudiera unir dos proyectos sabiendo
+			  que archivos suprimir o añadir.
+		    cons: Requeriria un reto tremendo enseñar a una maquina como elegir
+			  entre que archivos suprimir o añadir tal y como lo haría un 
+			  humano que conoce los archivos.
+
+	Manual-> pros: Te permite elegir sobre los archivos en los que hay un conflicto,
+			estudiando el código y pudiendo hablar con las personas que han 			modificado el archivo en cuestión.
+		 cons: Requiere gastar una cantidad de tiempo en realizarse que 
+			pudiera ser agilizado con inteligencia artificial.
+
+
